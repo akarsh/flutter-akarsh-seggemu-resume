@@ -1,0 +1,94 @@
+name: akarsh_seggemu_resume
+description: This project is developed to show the resume using flutter framework. The resume is maintained in a JSON format following resume JSON structure.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  path_provider: ^1.6.5
+  json_annotation: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - images/black_heart_suit_2665.png
+    - images/books_1f4da.png
+    - images/bust_in_silhouette_1f464.png
+    - images/card_index_1f4c7.png
+    - images/duolingo.png
+    - images/flag_for_germany_1f1e9_1f1ea.png
+    - images/flag_for_united_kingdom_1f1ec_1f1e7.png
+    - images/github.png
+    - images/globe_with_meridians_1f310.png
+    - images/graduation_cap_1f393.png
+    - images/hammer_and_wrench_1f6e0.png
+    - images/hourglass_with_flowing_sand_23f3.png
+    - images/information_source_2139.png
+    - images/linkedin.png
+    - images/memo_1f4dd.png
+    - images/rosette_1f3f5.png
+    - images/speech_balloon_1f4ac.png
+    - images/stackoverflow.png
+    - images/trophy_1f3c6.png
+    - images/twitter.png
+    - images/xing.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
