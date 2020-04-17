@@ -6,8 +6,8 @@ import 'dart:async';
 
 import 'package:akarsh_seggemu_resume/ResumeJSONSchema.dart';
 import 'package:flutter/material.dart';
-import './ContactLayout.dart';
-import './DocumentHelper.dart';
+import 'package:akarsh_seggemu_resume/ContactLayout.dart';
+import 'package:akarsh_seggemu_resume/DocumentHelper.dart';
 
 // List of schema images
 final List<String> imageOfSchemas = <String>[

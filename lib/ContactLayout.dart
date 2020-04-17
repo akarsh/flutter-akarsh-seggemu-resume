@@ -2,13 +2,13 @@
  * Copyright © 2020 Akarsh Seggemu. All rights reserved.
  */
 
-import 'package:akarsh_seggemu_resume/ResumeJSONSchema.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 
-import './DocumentHelper.dart';
-import './DownloadHelper.dart';
+import 'package:akarsh_seggemu_resume/ResumeJSONSchema.dart';
+import 'package:akarsh_seggemu_resume/DocumentHelper.dart';
+import 'package:akarsh_seggemu_resume/DownloadHelper.dart';
 
 class ContactLayout extends StatefulWidget {
   final Basics basics;

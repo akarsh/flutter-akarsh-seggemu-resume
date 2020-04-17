@@ -6,7 +6,7 @@ import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
 
-import './ResumeJSONSchema.dart';
+import 'package:akarsh_seggemu_resume/ResumeJSONSchema.dart';
 
 class DocumentHelper {
 // The path to the documents directory

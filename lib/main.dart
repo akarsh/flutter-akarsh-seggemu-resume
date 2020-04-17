@@ -3,9 +3,9 @@
  */
 import 'package:flutter/material.dart';
 
-import './ResumeLayout.dart';
-import './DownloadHelper.dart';
-import './DocumentHelper.dart';
+import 'package:akarsh_seggemu_resume/ResumeLayout.dart';
+import 'package:akarsh_seggemu_resume/DownloadHelper.dart';
+import 'package:akarsh_seggemu_resume/DocumentHelper.dart';
 
 void main() => runApp(MaterialApp(home: MyApp()));
 
