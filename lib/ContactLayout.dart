@@ -54,6 +54,7 @@ class _ContactLayoutScreenState extends State<ContactLayout> {
         title: Text('Contact'),
       ),
       body: Container(
+        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
         child: Column(
           children: <Widget>[
             Row(
@@ -61,14 +62,14 @@ class _ContactLayoutScreenState extends State<ContactLayout> {
                 Column(
                   children: <Widget>[
                     Container(
-                      padding: const EdgeInsets.fromLTRB(10, 10, 30, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 10, 30, 0),
                       child: Text(
                         '${widget.basics.name ?? "Name"}',
                       ),
                     ),
                     Container(
                       width: 220,
-                      padding: const EdgeInsets.fromLTRB(12, 15, 10, 10),
+                      padding: const EdgeInsets.fromLTRB(2, 15, 10, 10),
                       child: Text('${widget.basics.label ?? "label"}'),
                     )
                   ],
@@ -85,58 +86,31 @@ class _ContactLayoutScreenState extends State<ContactLayout> {
             ),
             Container(
                 height: 30,
-                padding: const EdgeInsets.fromLTRB(12, 0, 120, 0),
+                padding: const EdgeInsets.fromLTRB(2, 0, 120, 0),
                 child: Text('${widget.basics.email ?? "Email"}')),
             Container(
                 height: 30,
-                padding: const EdgeInsets.fromLTRB(12, 0, 190, 0),
+                padding: const EdgeInsets.fromLTRB(2, 0, 190, 0),
                 child: Text('${widget.basics.phone ?? "Phone"}')),
             Container(
                 height: 30,
-                padding: const EdgeInsets.fromLTRB(12, 0, 170, 0),
+                padding: const EdgeInsets.fromLTRB(2, 0, 170, 0),
                 child: Text('${widget.basics.website ?? "Website"}')),
             Container(
-                height: 30,
-                padding: const EdgeInsets.fromLTRB(12, 0, 240, 0),
-                child: Text('Location')),
-            Container(
-                height: 30,
-                padding: const EdgeInsets.fromLTRB(18, 0, 150, 0),
+                height: 35,
+                padding: const EdgeInsets.fromLTRB(10, 0, 150, 0),
                 child: Text('${widget.basics.location.address ?? "Address"}')),
-            Row(
-              children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Container(
-                      height: 30,
-                      padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-                      child: Text(
-                          '${widget.basics.location.postalCode ?? "Postal Code"}'),
-                    ),
-                    Container(
-                      height: 30,
-                      padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-                      child:
-                          Text('${widget.basics.location.region ?? "Region"}'),
-                    ),
-                  ],
-                ),
-                Column(
-                  children: <Widget>[
-                    Container(
-                      height: 30,
-                      padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-                      child: Text('${widget.basics.location.city ?? "City"}'),
-                    ),
-                    Container(
-                      height: 30,
-                      padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-                      child: Text(
-                          '${widget.basics.location.countryCode ?? "Country code"}'),
-                    ),
-                  ],
-                ),
-              ],
+            Container(
+              height: 20,
+              padding: const EdgeInsets.fromLTRB(0, 2, 205, 0),
+              child: Text(
+                  '${widget.basics.location.postalCode ?? "Postal Code"}, ${widget.basics.location.city ?? "City"}'),
+            ),
+            Container(
+              height: 20,
+              padding: const EdgeInsets.fromLTRB(0, 2, 205, 0),
+              child: Text(
+                  '${widget.basics.location.region ?? "Region"}, ${widget.basics.location.countryCode ?? "Country code"}'),
             ),
           ],
         ),
